@@ -45,7 +45,7 @@ function main() {
     headerComponent(homeEl)
     homeComponent(homeEl)
     document.querySelector(".home__title").innerHTML = "Mis <span>trabajos</span>"
-    document.querySelector(".home__img").src = "../images/trabajos.png"
+    document.querySelector(".home__img").src = "./images/trabajos.png"
     cardComponent(document.querySelector('.trabajos'))
     footerComp(document.querySelector('.footer-cont'))
 
