@@ -36,18 +36,20 @@ function formComp(container) {
   formulario.addEventListener('submit', (e) => {
     e.preventDefault()
     const form = new FormData(formulario)
-    console.log([...form])
-    fetch("http://httpbin.org/post", {
+    const data = Object.fromEntries(form)
+    console.log(data);
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: {
-        "to": "asd123@gmail.com",
-        "message": form[2]
-      }
-    })
-      .then(response => response.json())
+      body: JSON.stringify({
+        "to": "axelkevinagustinrojas@gmail.com",
+        "message": `${data.nombre} te envio el siguiente mensaje:
+        ${data.mensaje} . Esta es su direccion de contacto ${data.email}`
+      })
+    }).then(res => res.json())
       .then(data => console.log(data))
   })
+
 
 
   container.appendChild(formEl)
