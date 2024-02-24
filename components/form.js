@@ -37,7 +37,6 @@ function formComp(container) {
     e.preventDefault()
     const form = new FormData(formulario)
     const data = Object.fromEntries(form)
-    console.log(data);
     fetch("https://apx-api.vercel.app/api/utils/dwf", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -46,8 +45,7 @@ function formComp(container) {
         "message": `${data.nombre} te envio el siguiente mensaje:
         ${data.mensaje} . Esta es su direccion de contacto ${data.email}`
       })
-    }).then(res => res.json())
-      .then(data => console.log(data))
+    })
   })
 
 
