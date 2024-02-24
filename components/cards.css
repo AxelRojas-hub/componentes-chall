@@ -1,0 +1,88 @@
+.servicios{
+    font-family: "Poppins";
+    padding: 50px 0;
+    min-height: 100svh;
+    background: url(../images/doodle.svg);
+    background-color: #13171C;
+    color: #EEEEEE;
+}
+.servicios__content{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.servicios__title{
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+}
+.servicios__title span{
+    color: #14a748;
+}
+@media(min-width:1024px){
+    .servicios__content{
+        padding: 0 35px;
+    }
+    .proyectos-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        margin-top: 2em;
+    }
+    .servicios{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicios__title{
+        font-size: 64px;
+    }
+}
+
+
+.proyecto{
+    width: 100%;
+    max-width: 300px;
+    min-height: 481px;
+    padding: 30px ;
+    background-color: #393E4680;
+    backdrop-filter: blur(0.1rem);
+    border-radius: 16px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-wrap: balance;
+}
+.proyecto__img{
+    align-self: center;
+    height: 100%;
+    width: 100%;
+}
+.proyecto__title{
+    margin: 10px 0;
+
+}
+.proyecto__text{
+    margin: 0px;
+}
+.proyecto-url{
+    color: white;
+    text-decoration: none;
+}
+
+@media(min-width:1024px){
+    .proyecto{
+        margin-bottom: 0px;
+        height: 100%;
+        padding: 15px;
+    }
+    .proyecto__title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .proyecto__text{
+        margin: 30px 0;
+    }
+}

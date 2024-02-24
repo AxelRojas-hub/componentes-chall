@@ -1,0 +1,76 @@
+.overlay-menu{
+    font-family: "Poppins";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.overlay-menu__cruz{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+.overlay-menu__opciones a{
+    color:white;
+    text-decoration: none;
+}
+.overlay-menu__opciones{
+    text-align: center;
+}
+.overlay-menu__title{
+    font-size: 42px;
+    font-weight: 500;
+}
+
+
+.header{
+    font-family: "Poppins";
+    height: 114px;
+    padding: 39px 35px;
+    background-color: #141414;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.header__logo{
+    margin: 0;
+    height: 55px;
+    width: 55px;
+}
+.header__nav{
+    display: none;
+}
+@media(min-width:1024px){
+    .header__nav{
+        display: initial;
+        width: 400px;
+    }
+    .header__lista{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header__lista a{
+        margin-right: 42px;
+    }
+    .header__hamburguesa{
+        display: none;
+    }
+}
+.header__lista{
+    list-style: none;
+}
+.header__lista a{
+    color: #EEEEEE;
+    text-decoration: none;
+    text-align: right;
+}
