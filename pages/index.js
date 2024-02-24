@@ -45,7 +45,7 @@ function main() {
     //Home Component
     homeComponent(homeEl)
     document.querySelector(".home__title").innerHTML = "Hola<br><span>Soy Axel</span>"
-    document.querySelector(".home__img").src = "../images/home-img.png"
+    document.querySelector(".home__img").src = "./images/home-img.png"
 
     //Card component
     cardComponent(document.querySelector('.servicios'))
