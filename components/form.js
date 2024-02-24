@@ -35,6 +35,8 @@ function formComp(container) {
 
   formulario.addEventListener('submit', (e) => {
     e.preventDefault()
+    formulario.reset()
+    alert("Mensaje enviado")
     const form = new FormData(formulario)
     const data = Object.fromEntries(form)
     fetch("https://apx-api.vercel.app/api/utils/dwf", {

@@ -60,6 +60,12 @@
     font-weight: 700;
     font-size: 18px;
 }
+.contacto__form--button:hover{
+    background-color: white;
+    color: #13171C;
+    cursor:pointer;
+}
+
 
 .form__input, .contacto__form--button{
     font-family: 'Poppins';
